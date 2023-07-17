@@ -1,0 +1,104 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.R.R. Tolkien Bio</title>
+</head>
+<body>
+  <header>
+    <h1>J.R.R. Tolkien<br>
+    a brief biography</h1>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#personalLife">Personal Life</a>
+      <a href="#writing">Writing</a>
+    </nav>
+  </header>
+  <main>
+    <aside>
+      <figure>
+        <img style="max-width:400px;" src="https://images.pexels.com/photos/6958119/pexels-photo-6958119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lord of the Rings book">
+        <p>
+        "Home is behind, the world ahead<br>
+        and there are many paths to tread<br>
+        through shadows to the edge of night,<br>
+        until the stars are all alight."<br><br>
+        - J.R.R. Tolkien, The Lord of the Rings  
+        </p>
+      </figure>
+    </aside>
+    
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>John Ronald Reuel Tolkien lived from 3 January 1892 - 2 September 1973. He was an English writer, well known for works such as The Hobbit and The Lord of the Rings.</p>
+    </section>
+    
+    <section id="personalLife">
+      <h2>Personal Life</h2>
+      <p>Tolkien was married to Edith Bratt and together they had four children.</p>
+    </section>
+    
+    <section id="writing">
+      <h2>Writing</h2>
+      <p>Tolkien wrote many works, but is perhaps best known for:</p>
+      <ul>
+        <li>The Hobbit</li>
+        <li>The Lord of the Rings
+          <ul>
+            <li>The Fellowship of the Ring</li>
+            <li>The Two Towers</li>
+            <li>The Return of the King</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <h3>Contact the Author</h3>
+    <p>Please submit a message to the author by email or with the form below.</p>
+    <p><a href="mailto:alperry21@gmail.com">alperry21@gmail.com</a></p>
+    <form action="/action_page.php" method="get">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message">
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+  
+</body>
+</html>
